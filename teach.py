@@ -121,7 +121,7 @@ def main():
     for i in range(N):
       indexlist[i]=i
     k=4
-    np.random.seed(seed=314) 
+    np.random.seed(seed=314) #ネットワークモデル始
     X = np.random.rand(N, 2)
     inf=100
     Dis=np.zeros((N, N))+inf#距離
@@ -189,7 +189,7 @@ def main():
                             min_kouho=Dis[i][l]
                             index_kouho=l
                     if index_kouho != inf:
-                        kouho[i]=index_kouho
+                        kouho[i]=index_kouho　#ネットワークモデル終
     L=d-A # (asymmetric) adjacecy matrix#mode=connectivity(０と1の接続行列)
     edges = []                                                              
     for i in range(N):
